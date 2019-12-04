@@ -8,9 +8,6 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 	
-		while(true){
-		  int test = 5;
-		}
 		Main e = new Main();
 		List<int[]> list = new ArrayList<int[]>();
 		
