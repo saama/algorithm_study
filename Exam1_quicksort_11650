@@ -9,7 +9,6 @@ public class Main {
 	public static void main(String[] args) {
 		Main e = new Main();
 		List<int[]> list = new ArrayList<int[]>();
-		List<int[]> list = new ArrayList<int[]>
 		Scanner sc = new Scanner(System.in);
 		int cnt;
 		//정렬할 갯수
