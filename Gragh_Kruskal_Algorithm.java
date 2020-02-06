@@ -92,10 +92,10 @@ public class Exam12_Gragh_Kruskal_Algorithm {
 			pq.add(new A(s,e,v));
 		}//모든 간선에 대해  [시작, 끝, 비용]을 가진 클래스로 우선순위 큐에 add
 		
-		Iterator<A> pqe = pq.iterator();
-		while(pqe.hasNext()) {
-			System.out.println(pqe.next().toString()); //0을 시작으로 4 1 2 3 6 5순서로 방문 
-		}
+//		Iterator<A> pqe = pq.iterator();
+//		while(pqe.hasNext()) {
+//			System.out.println(pqe.next().toString()); //0을 시작으로 4 1 2 3 6 5순서로 방문 
+//		}
 		
 		for (int i = 0; i < N; i++) {
 			parent[i]=i;
@@ -103,16 +103,21 @@ public class Exam12_Gragh_Kruskal_Algorithm {
 		
 		for (int i = 0; i < E; i++) { //모든 간선에 대해서 확인
 			A oneNode = pq.poll(); //무조건 가장작은 간선이 poll됨(큐안에 들어있는 순서는 상관없음)
+			System.out.println(oneNode+" was polled");
 			int start = oneNode.s;
 			int end = oneNode.e;
-			int a = find(start); //만약 이 간선을 선택해서 연결한다고 했을때 사이클이 생기면 안되므로
-			int b = find(end); //양쪽의 루트(최상위부모)노드가 무엇인지 확인하고
-			if(a==b) continue; //만약 같으면 선택하지 않고 넘어간다.
+			int a = find(start);
+			int b = find(end);
+			//※※※연결직전 두정점의 최상위 부모가 같다는것은 연결되면 cycle이 된다는 것을 의미※※※
+			if(a==b) continue;
 			
 			union(start,end); //두개의 루트노드가 달랐다면 한쪽의 최상위 부모를 다른 한쪽의 부모로 설정하고
-			System.out.println("start "+start+" end "+end);
-			System.out.println(Arrays.toString(parent));
+			System.out.println("start : "+start+" end : "+end+" 연결됨"); //실제 연결되는 간선
+			System.out.println("start의 루트: "+a);
+			System.out.println("end의 루트: "+b);
+			System.out.println("parent "+Arrays.toString(parent));
 			result += oneNode.v; //선택된 간선이므로 간선의 비용을 더한다.
+			
 		}
 		System.out.println(result);
 	}
