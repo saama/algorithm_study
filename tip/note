@@ -1,0 +1,24 @@
+##########스캐너대신 버퍼드리더##############
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+StringTokenizer st = new StringTokenizer(br.readLine()); //입력받고
+while(st.hasMoreTokens()){//이렇게 사용
+  System.out.print(st.nextToken());  
+}
+
+BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+bw.write("출력할내용");
+bw.flush(); //종료
+
+###########우선순위큐###########
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+//데이터 넣기
+pq.offer(1);
+//우선순위큐 iterator사용
+Iterator<Integer> it = pq.iterator();
+while(it.hasNext()){
+  System.out.print(it.next().toString()+" ");
+}
+//데이터빼기
+pq.poll()
+//가장상위데이터보기
+pq.peek()
