@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Exam22_Programers_level2_1 {
+//문제링크
+//https://programmers.co.kr/learn/courses/30/lessons/1829
 	static int m = 6;
 	static int n = 4;
     static int[][] arr = 
