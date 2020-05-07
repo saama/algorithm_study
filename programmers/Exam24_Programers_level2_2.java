@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Arrays;
 
-public class Exam_24 {
+public class Exam24_Programers_level2_2 {
 	
     public int[] solution(int[] heights) {
         int[] answer = new int[heights.length];
