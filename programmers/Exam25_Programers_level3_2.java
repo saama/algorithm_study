@@ -27,7 +27,7 @@ public class Exam25_Programers_level3_2 {
     	
     	//해당 depth의 중간index
     	int mid = (int)Math.pow(2,depth-1)-1;
-    	//해당 마지막 index
+    	//해당 depth의 마지막 index
     	int last = (int)Math.pow(2,depth)-2;
 //    	System.out.println("mid = "+mid);
 //    	System.out.println("last = "+last);
