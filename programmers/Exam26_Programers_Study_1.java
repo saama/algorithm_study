@@ -1,7 +1,7 @@
 package kakao;
 
 public class Exam6 {
-	
+//	프로그래머스 카카오2020 문자열 압축
 //	aabbaccc
 //	2a2ba3c -> 7
 //	ababcdcdababcdcd
