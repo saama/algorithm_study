@@ -26,3 +26,14 @@ pq.peek()
 #########ArrayList###########
 String[] skill_trees를 아래와 같이 ArrayList로 만들어줄수 있음
 ArrayList<String> skillTrees = new ArrayList<String>(Arrays.asList(skill_trees));
+
+
+###########정규식 사용#############
+System.out.println("BACDE".replaceAll("[^CBD]", ""));
+->'BCD' //CBD를 다찾되 BACDE의 순서기준으로 반환
+System.out.println("CBADF".replaceAll("[^CBD]", ""));
+->'CBD' //CBD를 찾으며 순서에 맞게 반환
+System.out.println("AECB".replaceAll("[^CBD]", ""));
+->'CB'
+System.out.println("BDA".replaceAll("[^CBD]", ""));
+->'BD' //CBD중 C가 없고, 나머지는 위와같이 반환
