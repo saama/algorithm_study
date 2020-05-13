@@ -22,3 +22,7 @@ while(it.hasNext()){
 pq.poll()
 //가장상위데이터보기
 pq.peek()
+
+#########ArrayList###########
+String[] skill_trees를 아래와 같이 ArrayList로 만들어줄수 있음
+ArrayList<String> skillTrees = new ArrayList<String>(Arrays.asList(skill_trees));
