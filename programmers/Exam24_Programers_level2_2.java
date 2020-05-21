@@ -3,7 +3,7 @@ package algorithm;
 import java.util.Arrays;
 
 public class Exam24_Programers_level2_2 {
-	
+//https://programmers.co.kr/learn/courses/30/lessons/42588
     public int[] solution(int[] heights) {
         int[] answer = new int[heights.length];
         Arrays.fill(answer, 0); // answer배열 0으로 채움
