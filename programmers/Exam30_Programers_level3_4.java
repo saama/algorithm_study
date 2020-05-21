@@ -3,6 +3,7 @@ package algorithmExam;
 import java.util.Arrays;
 
 public class Exam30_Programers_level3_4 {
+	//https://programmers.co.kr/learn/courses/30/lessons/43162
 	public int solution(int n, int[][] computers) {
         int answer = 0;
         boolean[] visited = new boolean[computers.length];
