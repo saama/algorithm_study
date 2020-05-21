@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Exam27_Programers_level2_3 {
 //	프로그래머스 summer/winter coding(2018) 스킬트리
+// 	https://programmers.co.kr/learn/courses/30/lessons/49993
     public int solution(String skill, String[] skill_trees) {
         int answer = 0;
         for (int i = 0; i < skill_trees.length; i++) {
