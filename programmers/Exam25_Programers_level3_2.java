@@ -3,7 +3,7 @@ package algorithm;
 import java.util.Arrays;
 
 public class Exam25_Programers_level3_2 {
-	
+//https://programmers.co.kr/learn/courses/30/lessons/62049	
 	/* 규칙성
 	 * 1. 접은 부분(중간값)은 무조건 0이됨
 	 * 2. 중간값 기준으로 우로한칸씩 증가하는 값들은 좌로한칸씩 증가하는 값들의 반대이다
