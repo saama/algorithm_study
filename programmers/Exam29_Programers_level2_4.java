@@ -1,4 +1,5 @@
 class Solution {
+	//https://programmers.co.kr/learn/courses/30/lessons/42584
 	//문제의 이해
 	//입력 [1, 2, 3, 2, 3]	
 	//출력 [4, 3, 1, 1, 0]
