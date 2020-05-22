@@ -5,12 +5,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exam28_Programers_level3_3 {
-    //https://programmers.co.kr/learn/courses/30/lessons/17676
+	//https://programmers.co.kr/learn/courses/30/lessons/17676
+	/*
+	 * ###쓸만한 소스###
+	 * String -> Timestamp 형식으로 바꿔 문자열 -> 숫자로 시간을 처리하는것이아닌
+	 * Timestamp.getTime()으로 간단하게 숫자연산을 할 수 있음
+	 * Double형은 실수 long은 정수형!
+	 * 따라서 '2.0'같은 문자열은 Double형으로 받아줘야함(long으로 안됨)
+	 * */
     public int solution(String[] lines) {
         int answer = 0;
         int counter = 1;
         List<Timestamp[]> timeList = new ArrayList<Timestamp[]>();
         
+        //문자열가공
         for (int i = 0; i < lines.length; i++) {
         	Timestamp[] line = new Timestamp[2];
         	
@@ -20,25 +28,24 @@ public class Exam28_Programers_level3_3 {
 			line[1] = e;
 			
 			//시작시간 계산(2.0s -> long 2000)
-			double tempRange = Double.parseDouble(lines[i].split(" ")[2].replace("s","").trim())*1000-1;
+			double tempRange = Double.parseDouble(lines[i].split(" ")[2].replace("s","").trim())*1000-1; //문제를 잘보고 끝시간의 범위를 잘 생각해야함
 			long range = (long)tempRange;
 			Timestamp s = new Timestamp(e.getTime() - range);
 			line[0] = s;
 			timeList.add(line);
-//			System.out.println(timeList.get(i)[0].getTime()+" | "+timeList.get(i)[1].getTime());
 		}
-//        System.out.println("========================================");
+        //끝
+        //로직 시작
         for (int i = 0; i < lines.length; i++) {
         	counter = 1;
 			for (int j = i+1; j < lines.length; j++) {
-				if(timeList.get(j)[0].getTime()<timeList.get(i)[1].getTime()+1000) {//  a[시작시간 j]<a[끝시간 i]+60
+				if(timeList.get(j)[0].getTime()<timeList.get(i)[1].getTime()+1000) {//  list[시작시간 j]<list[끝시간 i]+1000(1초)
 					counter++;
 				}
 			}
-//			System.out.println(i+" "+counter);
 			answer = Math.max(answer, counter);
 		}
-//        System.out.println(answer);
+        //끝
         return answer;
     }
     //2개의 시간을 매개변수로하고 1
@@ -74,5 +81,3 @@ public class Exam28_Programers_level3_3 {
 		System.out.println(e.solution(lines));
 	}
 }
-
-
