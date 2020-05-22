@@ -48,10 +48,6 @@ public class Exam28_Programers_level3_3 {
         //끝
         return answer;
     }
-    //2개의 시간을 매개변수로하고 1
-    public void f() {
-    	
-    }
     public static void main(String[] args) {
 		Exam_28 e = new Exam_28();
 //		String []lines = 
