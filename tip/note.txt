@@ -37,3 +37,17 @@ System.out.println("AECB".replaceAll("[^CBD]", ""));
 ->'CB'
 System.out.println("BDA".replaceAll("[^CBD]", ""));
 ->'BD' //CBD중 C가 없고, 나머지는 위와같이 반환
+
+#################문자열함수###################
+str1.charAt(0) //해당 문자열의 인덱스로접근하여 해당값을 반환
+"abc".toCharArray() //String형태를 char형 배열로 바꿔줌
+str1.getChars(1, 3, dest, 0);//str1문자열을 인덱스1부터 3까지 dest(캐릭터형배열)에다가 0번째부터 붙혀넣는다.
+str1.indexOf('#',4) // '#'를 4번째인덱스부터 찾아서 일치하면 해당 인덱스 반환
+str1.substring(2,4) //2부터 4전까지의 문자열 반환
+String[]test = "test test2 test3".split(" "); // 스트링의 test배열에 test test2 test3이 순서대로 들어감
+-> "X=100".split("=")[1] //이런식으로도 사용가능
+value.startsWith("[GAME]") //[GAME]로 시작하면 true반환
+value.endsWith("I") // 뒤에서부터 I로 시작하면 true반환
+value.lastIndexOf("R") //찾고자하는 문자열에서 R을 뒤에서부터 찾은후 인덱스는 그대로 앞에순서에서 반환
+value.compareTo("CB") //value와 "CB"를 비교한뒤 같으면 0 을 반환 다르면 그인덱스의 아스키코드의 차이값을 반환
+->길이가 다르면 -1
