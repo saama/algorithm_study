@@ -65,7 +65,7 @@ public class Exam32_Programers_level3_5 {
 	}
 	
 	public static void main(String[] args) {
-		Exam_30 e = new Exam_30();
+		Exam32_Programers_level3_5 e = new Exam32_Programers_level3_5();
 		int n=4;
 		int [][] costs = {
 							{0,1,1},
