@@ -3,7 +3,7 @@ package algorithm;
 import java.util.PriorityQueue;
 
 public class Exam32_Programers_level3_5 {
-	
+// 	https://programmers.co.kr/learn/courses/30/lessons/42861
 	public int solution(int n, int[][] costs) {
         int answer = 0;
         int E = costs.length;
