@@ -1,6 +1,6 @@
 package algorithm;
 
-public class Exam_29 {
+public class Exam31_Programers_level2_5_ing {
 	
 	 public int solution(String arrangement) {
 	        int answer = 0;
