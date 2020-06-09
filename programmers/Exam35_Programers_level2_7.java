@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class Exam35_Programers_level2_6 {
+public class Exam35_Programers_level2_7 {
 	public int solution(int[] priorities, int location) {
 		
 		/*
