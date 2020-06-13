@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Exam35_Programers_level2_7 {
 	public int solution(int[] priorities, int location) {
-		
+		//https://programmers.co.kr/learn/courses/30/lessons/42587
 		/*
 		 * #쓸만한 소스
 		 * int[] -> List<Integer>
