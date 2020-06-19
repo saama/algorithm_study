@@ -18,6 +18,7 @@ class Solution6{
             }
             else
             	if(cnt!=0) cnt = cnt - 1; //cnt = cnt - 1;에서 cnt가 0일경우 조건추가
+                //else cnt = Math.max(0, cnt - 1); ->정답
         }
         return cnt;
     }
