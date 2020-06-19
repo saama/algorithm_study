@@ -1,6 +1,7 @@
 package algorithm;
 
 class Solution6{
+    //A,B가 계단 0에서 가위바위보를 하고 10판뒤에 A의 위치
     public int func(int record){
         if(record == 0) return 1;
         else if(record == 1) return 2;
@@ -16,7 +17,7 @@ class Solution6{
                 cnt = cnt + 3;
             }
             else
-            	if(cnt!=0) cnt = cnt - 1;
+            	if(cnt!=0) cnt = cnt - 1; //cnt = cnt - 1;에서 cnt가 0일경우 조건추가
         }
         return cnt;
     }
