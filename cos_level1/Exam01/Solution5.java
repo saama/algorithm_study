@@ -2,6 +2,7 @@ package algorithm;
 import java.util.*;
 
 class Solution5 {
+    //투표된 순서대로 들어있는 배열로 가장많이 득표한 후보를 오름차순으로 출력
     public int[] solution(int N, int[] votes) {
         int voteCounter[] = new int[11];
         for (int i = 0; i < votes.length; i++) {
@@ -12,7 +13,7 @@ class Solution5 {
         for (int i = 1; i <= N; i++) {
             if (maxVal < voteCounter[i]) {
                 maxVal = voteCounter[i];
-                cnt = 1;
+                cnt = 1; //값이 더 큰 후보가 있을경우 계속 갱신
             }
             else if(maxVal == voteCounter[i]){
                 cnt += 1;
