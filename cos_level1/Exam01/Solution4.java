@@ -2,6 +2,7 @@ package algorithm;
 import java.util.Arrays;
 
 class Solution4 {
+    //두배열 A,B를 오름차순순서로 answer배열에 합침
     public int[] solution(int[] arrA, int[] arrB) {
         int arrA_idx = 0, arrB_idx = 0;
         int arrA_len = arrA.length;
