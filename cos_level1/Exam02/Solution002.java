@@ -10,7 +10,7 @@ class Solution002 {
         int answer = INF;
         for(int i = 0; i < subwayTimes.length; ++i){
             int subwayMinute = func_a(subwayTimes[i]);
-            if(subwayMinute>=currentMinute){
+            if(subwayMinute>=currentMinute){ //현재 시간보다 크거나 같은 지하철시간의 차이를 반환하면됨
                 answer = subwayMinute - currentMinute;
                 break;
             }
