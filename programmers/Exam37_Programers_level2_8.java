@@ -1,6 +1,6 @@
 package algorithm;
 
-public class Exam36_Programers_level2_8 {
+public class Exam37_Programers_level2_8 {
 	
 	public String solution(int n) {
         int val = 0;
@@ -19,7 +19,7 @@ public class Exam36_Programers_level2_8 {
     }
 	
 	public static void main(String[] args) {
-		Exam_35 e = new Exam36_Programers_level2_8();
+		Exam_35 e = new Exam37_Programers_level2_8();
 		e.solution(60);
 		/*
 		 * 7  21
