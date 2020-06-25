@@ -1,7 +1,9 @@
 package algorithm;
 
 public class Exam37_Programers_level2_8 {
-	
+	//https://programmers.co.kr/learn/courses/30/lessons/12899
+	//규칙1. 3으로 나눠질경우 몫을 -1 함
+	//계속 반복
 	public String solution(int n) {
         int val = 0;
         StringBuffer sb = new StringBuffer();
